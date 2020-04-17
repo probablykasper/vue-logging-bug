@@ -7,5 +7,4 @@ services:
       target: dev-stage
     volumes:
       - ./web:/usr/src/app
-    ports:
-      - 3000:3000
+    network_mode: host
