@@ -4,7 +4,6 @@ services:
     build:
       context: ./web
       dockerfile: Dockerfile
-      target: dev-stage
-    volumes:
-      - ./web:/usr/src/
-    network_mode: host
+      target: deploy-stage
+    ports:
+      - 8004:80
