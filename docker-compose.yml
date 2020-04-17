@@ -6,5 +6,5 @@ services:
       dockerfile: Dockerfile
       target: dev-stage
     volumes:
-      - ./web:/usr/src/app
+      - ./web:/usr/src/
     network_mode: host
